@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+     }
+      input{
+          width:70%;
+          height: 40px;
+          background-color: black;
+          color: white;
+          font-size: 20px;
+     }
+      button{
+          width: 40%;
+          background-color: black;
+          color: white;
+          height: 50px;
+          font-size: 20px;
+      }
+     .first{
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          justify-content: center;
+          align-items: center;
+          background: linear-gradient(black,black);
+     }
+     #preview{
+          width: 80%;
+          height:90px;
+          background-color:black;
+          color: white;
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+     .fist{
+          width:40%;
+          height:500px;
+          background-color:rgb(77, 27, 77);
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          justify-content: center;
+          align-items: center;
+     }
+    </style>
+</head>
+<body>
+
+          <div class="first">
+               <div class="fist">
+               <input id="input1" type="text">
+               <button onclick="btn()">CLICK ME</button>
+               <div id="preview"></div>
+          </div>    
+     </div>
+</body>
+</html>
+<script>
+    let input = document.getElementById ('input1')
+    let prev = document.getElementById ('preview')
+
+    function btn() {
+        let months = input.value
+        if (months ==='january') {
+            prev.innerHTML = 'January has 31 days'
+           
+            
+            
+        }
+        
+        else if (months ==='febuary') {
+             prev.innerHTML = ' Febuary has 29 days'
+            
+            
+            
+        }
+        
+         else if (months ==='march') {
+             prev.innerHTML = 'march has 31 days'
+     ;
+            
+            
+        }
+        else if (months ==='april') {
+             prev.innerHTML = 'april has 30 days'
+           
+            
+            
+        }
+        
+        else if (months ==='may') {
+             prev.innerHTML = 'may has 31 days'
+        
+            
+            
+        }
+        else if (months ==='june') {
+             prev.innerHTML = 'june has 30 days'
+        
+            
+            
+        }
+        else if (months ==='july') {
+             prev.innerHTML = 'july has 31 days'
+            
+                
+                
+        }
+        else if (months ==='august') {
+             prev.innerHTML = 'august has 31 days'
+            
+                
+                
+        }
+        else if (months ==='september') {
+             prev.innerHTML = 'september has 30 days'
+            
+                
+                
+        }
+        else if (months ==='october') {
+             prev.innerHTML = 'october has 31 days'
+            
+                
+                
+        }
+        else if (months ==='november') {
+             prev.innerHTML = 'november has 30 days'
+            
+                
+                
+        }
+        else if (months ==='december') {
+             prev.innerHTML = 'December has 31 days'
+            
+                
+                
+        }
+        else{
+            prev.innerHTML = 'invalid word'
+           
+            
+        }
+
+
+        
+    }
+
+</script>
